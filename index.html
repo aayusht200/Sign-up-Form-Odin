@@ -4,11 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>sign-up-form</title>
 </head>
 
 <body>
+    <div class="leftSection">
+        <img src="assets/halie-west-25xggax4bSA-unsplash.jpg" alt="">
+    </div>
+    <div class="rightSection">
+        <div class="header">
+            <p>This is not a real online service! You know you need something like this in you life to help you
+                realize
+                your deepest dreams sing up now to get started.</p>
+            <p class="tail">You know you want to!</p>
+        </div>
+        <form action="#">
+            <div class="form">
+                <p>Lets do this!</p>
+                <div class="form-fields">
+                    <div class="field">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="field">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="abc@xyz.com" required>
 
+                    </div>
+                    <div class="field">
+                        <label for="phoneNumber">PHONE NUMBER</label>
+
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number"
+                            pattern="\d{10}" required>
+
+                    </div>
+                    <div class="field">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="field">
+                        <label for="rePassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="rePassword" id="rePassword" required>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="btn">
+                    <button type="submit"> Create Account</button>
+                </div>
+                <div class="log-in">
+                    Already have an account? <a href="#">log in</a>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>
